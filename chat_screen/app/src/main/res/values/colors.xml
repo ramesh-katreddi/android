@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02B8DB</color>
+    <color name="colorPrimaryDark">#02B8DB</color>
+    <color name="colorAccent">#333333</color>
+    <color name="chat_bg_color">#EAEBED</color>
+    <color name="chat_typed_by_me_color">#098ca6</color>
+    <color name="chat_typed_by_friend_color">#dadbde</color>
+
+    <color name="user_list_bg">#E3E3E3</color>
+    <color name="divider">#DDD</color>
+</resources>

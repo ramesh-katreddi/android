@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_between_views">8dp</dimen>
+    <dimen name="double_space_between_views">16dp</dimen>
+    <dimen name="chat_edittext_height">64dp</dimen>
+    <!-- list items -->
+    <dimen name="list_item_height">80dp</dimen>
+
+    <dimen name="avatar_margin_y">8dp</dimen>
+    <dimen name="avatar_margin_x">20dp</dimen>
+    <dimen name="avatar_width">48dp</dimen>
+    <dimen name="avatar_height">48dp</dimen>
+
+
+    <dimen name="clickable_icon_width">48dp</dimen>
+    <dimen name="clickable_icon_height">48dp</dimen>
+    <dimen name="clickable_icon_padding_x">6dp</dimen>
+    <dimen name="clickable_icon_padding_y">6dp</dimen>
+
+
+    <!--Dialog dimensions -->
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="content_top_margin">60dp</dimen>
+    <dimen name="content_top_padding">120dp</dimen>
+    <dimen name="dialog_icon_size_small">12dp</dimen>
+    <dimen name="drop_image_width">114dp</dimen>
+    <dimen name="drop_image_height">170dp</dimen>
+    <dimen name="profile_picture_width">96dp</dimen>
+    <dimen name="profile_picture_height">96dp</dimen>
+    <dimen name="margin_left_to_keep_profilepic_inside_drop">12dp</dimen>
+    <dimen name="margin_top_to_keep_profile_pic_inside_drop">11dp</dimen>
+    <dimen name="close_button_position_relative_to_top">66dp</dimen>
+
+
+</resources>

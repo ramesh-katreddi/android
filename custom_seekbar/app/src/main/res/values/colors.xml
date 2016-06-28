@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="thumb_color">#DDDDDD</color>
+
+    <color name="progress_bar_border">#CCCCCC</color>
+
+    <color name="progress_bar_bg_gradient_start">#F1F1F1</color>
+    <color name="progress_bar_bg_gradient_end">#F5F5F5</color>
+
+    <color name="progress_bar_gradient_start">#3030a8</color>
+    <color name="progress_bar_gradient_end">#c078c0</color>
+    <color name="progress_bar_gradient_center">#4848a8</color>
+</resources>

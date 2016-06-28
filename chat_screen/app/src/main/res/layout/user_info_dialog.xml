@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_top_margin"
+        android:background="@drawable/curved_bg_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/double_space_between_views"
+        android:paddingTop="@dimen/content_top_padding">
+
+        <TextView
+            style="@style/text_primary_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Emily Green"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/text_secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="greengirl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_views"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--TODO this image needs to be replaced-->
+                <ImageView
+                    android:layout_width="@dimen/dialog_icon_size_small"
+                    android:layout_height="@dimen/dialog_icon_size_small"
+                    android:contentDescription="@string/followers_icon"
+                    android:src="@drawable/ic_favorite_black_18dp" />
+
+                <TextView
+                    style="@style/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Followers(50)"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--TODO this image needs to be replaced-->
+                <ImageView
+                    android:layout_width="@dimen/dialog_icon_size_small"
+                    android:layout_height="@dimen/dialog_icon_size_small"
+                    android:contentDescription="@string/following_icon"
+                    android:src="@drawable/ic_directions_walk_black_18dp" />
+
+                <TextView
+                    style="@style/text_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Following(20)"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/space_between_views"
+            android:layout_marginTop="@dimen/double_space_between_views"
+            android:background="@color/divider" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/icon_clickable"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:contentDescription="@string/chat_icon"
+                android:src="@drawable/chat_icon" />
+
+            <ImageView
+                style="@style/icon_clickable"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:contentDescription="@string/cyoo_icon"
+                android:src="@drawable/cyoo_icon_grey" />
+
+            <ImageView
+                style="@style/icon_clickable"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:contentDescription="@string/plus_mark"
+                android:src="@drawable/plusmark" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/space_between_views"
+            android:layout_marginTop="@dimen/space_between_views"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/double_space_between_views"
+            android:layout_marginTop="@dimen/space_between_views"
+            android:gravity="center"
+            android:text="Block User"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/drop_image_width"
+        android:layout_height="@dimen/drop_image_height"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="@dimen/drop_image_width"
+            android:layout_height="@dimen/drop_image_height"
+            android:contentDescription="@string/title_icon"
+            android:src="@drawable/small_drop" />
+
+        <whatsdplan.com.chatscreen.thirdparty.RoundedImageView
+            android:id="@+id/profPic"
+            android:layout_width="@dimen/profile_picture_width"
+            android:layout_height="@dimen/profile_picture_height"
+            android:layout_marginLeft="@dimen/margin_left_to_keep_profilepic_inside_drop"
+            android:layout_marginStart="@dimen/margin_left_to_keep_profilepic_inside_drop"
+            android:layout_marginTop="@dimen/margin_top_to_keep_profile_pic_inside_drop"
+            android:contentDescription="@string/user_description"
+            android:src="@drawable/istock6" />
+
+    </RelativeLayout>
+
+    <!-- NEgative margin was needed. Could not find any other way. If you can think of any way let me know-->
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/up_arrow_icon"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/double_space_between_views"
+        android:paddingRight="@dimen/double_space_between_views"
+        android:paddingTop="20dp"
+        android:src="@drawable/up_arrow" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/space_between_views"
+        android:layout_marginStart="@dimen/space_between_views"
+        android:layout_marginTop="@dimen/close_button_position_relative_to_top"
+        android:contentDescription="@string/close_icon"
+        android:src="@drawable/ic_close_black_24dp" />
+
+</RelativeLayout>

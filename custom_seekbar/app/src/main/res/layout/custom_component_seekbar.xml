@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:maxHeight="@dimen/progressbar_height"
+        android:progressDrawable="@drawable/layer_list_bg"
+        android:splitTrack="false"
+        android:thumb="@drawable/circle"
+        android:thumbOffset="@dimen/thumb_offset" />
+
+    <LinearLayout
+        android:id="@+id/seekbar_intervals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+</merge>

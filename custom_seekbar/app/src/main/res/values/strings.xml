@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">custom_seekbar</string>
+
+    <string name="minutes_template">%1$s Minutes</string>
+
+    <string name="hours_template">%1$s Hours</string>
+
+    <string name="horus_mins_template">%1$s Hours %2$s Minutes</string>
+    <string name="close_btn">CLose button</string>
+
+</resources>
+

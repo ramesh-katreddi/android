@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_bg_color"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/space_between_views"
+        android:layout_marginRight="@dimen/space_between_views"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/chat_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_between_views"
+        android:background="@android:color/white"
+        android:hint="@string/chat_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"
+        android:minHeight="@dimen/chat_edittext_height"
+        android:paddingLeft="@dimen/double_space_between_views"
+        android:paddingRight="@dimen/double_space_between_views"
+        android:scrollbars="vertical"
+        android:singleLine="true" />
+</LinearLayout>

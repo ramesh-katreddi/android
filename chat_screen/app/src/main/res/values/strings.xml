@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ChatScreen</string>
+    <string name="chat_hint">Message</string>
+    <string name="user_description">user_name</string>
+    <string name="other_user_response">"response random string "</string>
+    <string name="invalid_chat_message">Please enter valid text</string>
+    <string name="delete">Delete</string>
+    <string name="dummy_date">12/23/16</string>
+    <string name="followers_icon">Icon to depict followers</string>
+    <string name="following_icon">following_icon</string>
+    <string name="chat_icon">icon_for_chat</string>
+    <string name="cyoo_icon">TODO</string>
+    <string name="plus_mark">TODO</string>
+    <string name="title_icon">TODO</string>
+    <string name="up_arrow_icon">TODO</string>
+    <string name="close_icon">close icon TODO</string>
+</resources>

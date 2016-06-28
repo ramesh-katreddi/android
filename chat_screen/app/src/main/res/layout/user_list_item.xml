@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <!-- what to show when we swipe left -->
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#FF5534"
+        android:text="@string/delete"
+        android:textColor="@android:color/white" />
+
+    <!--actual content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/user_list_bg"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <whatsdplan.com.chatscreen.thirdparty.RoundedImageView
+                android:id="@+id/profPic"
+                android:layout_width="@dimen/avatar_width"
+                android:layout_height="@dimen/avatar_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/avatar_margin_y"
+                android:layout_marginLeft="@dimen/avatar_margin_x"
+                android:layout_marginRight="@dimen/avatar_margin_x"
+                android:layout_marginTop="@dimen/avatar_margin_y"
+                android:contentDescription="@string/user_description"
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_date"
+                    android:textIsSelectable="false"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/text_primary_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/last_message"
+                    style="@style/text_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="false" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/navigate"
+                style="@style/icon_clickable"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/ic_chevron_right_black_48dp"
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+        <!-- divider item at the end of list-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>
+
